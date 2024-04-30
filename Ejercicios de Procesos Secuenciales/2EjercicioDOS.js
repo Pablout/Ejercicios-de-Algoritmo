@@ -24,7 +24,7 @@ function unir() {
    palabra1 = read();
    write("Ingrese palabra2:");
    palabra2 = read();
-   concatenar = palabra1 + " " + palabra2;
+   concatenar = palabra1 + "" + palabra2;
    write(concatenar);
 }
 

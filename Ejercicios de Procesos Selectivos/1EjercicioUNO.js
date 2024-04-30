@@ -1,34 +1,44 @@
-// 1. Pedir al usuario un número y mostrar si es mayor o menor que 10.
+//     1. Pedir al usuario un número y mostrar si es mayor o menor que 10.
 // Analisis de requerimentos:
-// Entrada: numero=0(leer), mayorMenor(proceso)
-// Proceso: Si numero > 10 entonces mayorMenor="mayor que 10", sino mayorMenor="menor o igual a 10"
-// Salida: mayorMenor
+// los datos o variables del problema
+// Entrada: numero1=0(leer)
+// Los calculos o procesos que se hacen con las variables
+// Proceso:  Escribir Ingrese el primer número";
+//            Leer número1 
+//         Si Cnúmero1 >=10) Entonces
+//           escribir "El numero es mayor a 10"
+//  sino
+//           escribir "El numero es menor a 10" 
+// La informacion de las variables procesadas
+// Salida: escribir "gracias por su visita"
 
-// Algoritmo compararNumero
-//    Declarar numero=0, mayorMenor=""
-//    Escribir "Ingrese un número:"
-//    Leer numero
-//    Si numero > 10 entonces
-//       mayorMenor="mayor que 10"
-//    sino
-//       mayorMenor="menor o igual a 10"
-//    FinSi
-//    Escribir mayorMenor
-// FinAlgoritmo
+// Seupdocodigo:
 
+// Algoritmo 
+// Declarar número1=0
+// Escribir Ingrese el primer número";
+// Leer número1
+// Si Cnúmero1 >=10) Entonces
+//       escribir "El numero es mayor a 10"
+// sino
+//       escribir "El numero es menor a 10" 
+//  escribir "gracias por su visita"
+//finAlgoritmo
 const read = require('prompt-sync')();
-const write = console.log;
+const write = console.log
 
-function compararNumero() {
-   let numero = 0, mayorMenor = "";
-   write("Ingrese un número:");
-   numero = parseFloat(read());
-   if (numero > 10) {
-      mayorMenor = "mayor que 10";
-   } else {
-      mayorMenor = "menor o igual a 10";
-   }
-   write(mayorMenor);
+
+function menorMayor(){
+let número1=0;
+numero1=read ("ingrese un numero: ");
+numero1=parseFloat=(numero1)
+if (numero1>10){
+    write ("El numero es mayor a 10")
 }
-
-compararNumero();
+else {
+    write ("El numero es menor a 10")
+}
+ write("gracias por su visita")
+}
+// se llama o se ejecuta la funcion
+menorMayor()

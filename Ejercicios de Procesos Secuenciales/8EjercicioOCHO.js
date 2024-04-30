@@ -15,11 +15,18 @@ const read = require('prompt-sync')();
 const write = console.log;
 
 function mostrarNombreTresVeces() {
-   let nombreUsuario = "", nombreRepetido = "";
+   let nombreUsuario = "", nombreRepetido = "",nombrerepetido2 = "", nombrerepetido3
    write("Ingrese su nombre:");
    nombreUsuario = read();
-   nombreRepetido = nombreUsuario + nombreUsuario + nombreUsuario;
+   write("Mostrar tres veces los nombres:");
+   nombreRepetido = nombreUsuario 
+   nombreRepetido2 = nombreUsuario
+   nombreRepetido3 = nombreUsuario
+   
    write(nombreRepetido);
+   write(nombreRepetido2);
+   write(nombreRepetido3);
 }
+
 
 mostrarNombreTresVeces();
